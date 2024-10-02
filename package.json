@@ -1,0 +1,17 @@
+{
+    "name": "MMM-IconSchedule",
+    "version": "1.0.0",
+    "description": "MagicMirror module for icon schedule",
+    "main": "MMM-IconSchedule.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Naty Lang",
+    "license": "MIT",
+    "dependencies": {
+      "csv-parse": "^4.6.3",
+        "fs": "0.0.1-security",
+        "install": "^0.12.2",
+        "moment": "^2.29.4"
+    }
+  }
