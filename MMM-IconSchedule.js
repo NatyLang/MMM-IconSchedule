@@ -100,8 +100,8 @@ Module.register('MMM-IconSchedule', {
         var dates = this.nextDates[i];
 
         //Create CSS Elements
-        var iconContainer = document.createElement("div");
-        iconContainer.classList.add("icon-container");
+        var eventContainer = document.createElement("div");
+        eventContainer.classList.add("icon-container");
 
         //Add date to Garbage Pickup
         var dateContainer = document.createElement("span");
@@ -121,7 +121,7 @@ Module.register('MMM-IconSchedule', {
           dateContainer.innerHTML = this.capFirst(iconDate.format(this.config.dateFormat));
         }
 
-        iconContainer.appendChild(dateContainer);
+        eventContainer.appendChild(dateContainer);
 
         //Add Garbage icons
         var iconContainer = document.createElement("span");
@@ -135,13 +135,13 @@ Module.register('MMM-IconSchedule', {
 
         }
 
-        iconContainer.appendChild(iconContainer);
-        wrapper.appendChild(iconContainer);
+        eventContainer.appendChild(iconContainer);
+        wrapper.appendChild(eventContainer);
 
         // Start Fading
         if (i >= startFade) {	//fading
           currentFadeStep = i - startFade;
-          iconContainer.style.opacity = 1 - (1 / fadeSteps * currentFadeStep);
+          eventContainer.style.opacity = 1 - (1 / fadeSteps * currentFadeStep);
         }
         // End Fading
 
