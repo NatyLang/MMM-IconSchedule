@@ -11,7 +11,7 @@ This module is based on works of Jeff Clarke `MMM-MyWastePickup` and Harm Tilbur
 
 ## Installation
 1. Navigate into your MagicMirror `modules` folder and execute<br>
-`git clone https://github.com/NatyLang/MMM-MIconSchedule.git`.
+`git clone https://github.com/NatyLang/MMM-IconSchedule.git`.
 2. Enter the new `MMM-IconSchedule` directory and execute `npm install`.
 
 ## Configuration
